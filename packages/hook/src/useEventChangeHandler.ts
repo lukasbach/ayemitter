@@ -1,7 +1,11 @@
 import { useEffect, useRef } from 'react';
 import { EventEmitter, EventHandler } from 'typedemitter';
 
-export const useEventChangeHandler = <T>(eventEmitter: EventEmitter<T>, handler: EventHandler<T>, dependencies: any[] = []) => {
+export const useEventChangeHandler = <T>(
+  eventEmitter: EventEmitter<T>,
+  handler: EventHandler<T>,
+  dependencies: any[] = []
+) => {
   const eventHandler = useRef<undefined | number>();
 
   useEffect(() => {
@@ -15,6 +19,6 @@ export const useEventChangeHandler = <T>(eventEmitter: EventEmitter<T>, handler:
       if (eventHandler.current !== undefined) {
         eventEmitter.delete(eventHandler.current);
       }
-    }
+    };
   }, [eventEmitter, ...dependencies]);
 };

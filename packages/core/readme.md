@@ -7,7 +7,7 @@ type and start adding handlers.
 
     yarn add typedemitter
 
-Create a ``EventEmitter`` instance typed to whatever your
+Create a `EventEmitter` instance typed to whatever your
 payload type is, add handlers and emit a new event.
 
 ```typescript
@@ -16,20 +16,20 @@ import { EventEmitter } from 'typedemitter';
 const emitter = new EventEmitter<string>();
 
 emitter.on(payload => {
-  console.log("Handler 1 " + payload);
+  console.log('Handler 1 ' + payload);
 });
 
 emitter.on(payload => {
-  console.log("Handler 2 " + payload);
+  console.log('Handler 2 ' + payload);
 });
 
-emitter.emit("yup");
+emitter.emit('yup');
 // Outputs:
 //   Handler 1 yup
 //   Handler 2 yup
 ```
 
-If one or more handlers are asynchronous, the ``emit`` 
+If one or more handlers are asynchronous, the `emit`
 call waits for all handlers to finish. All handlers are
 invoked at the same time.
 
@@ -50,13 +50,14 @@ emitter.on(async payload => {
   // immediately returns
 });
 
-emitter.emit("yup").then(() => console.log("Done!"));
+emitter.emit('yup').then(() => console.log('Done!'));
 // All three handlers are invoked at the same time
-// "Done!" is outputted after 2 seconds, i.e. after 
+// "Done!" is outputted after 2 seconds, i.e. after
 // all handlers are finished
 ```
 
 ## API
+
 ```typescript
 interface EventEmitter<EventPayload> {
   constructor(options?: EventEmitterOptions<EventPayload>);
@@ -84,14 +85,18 @@ import { useEventChangeHandler } from 'typedemitter-hook';
 
 const emitter = new EventEmitter<string>();
 const Component = () => {
-  const [state, setState] = useState("state1");
-  useEventChangeHandler(emitter, () => {
-    console.log("Hello!");
-  }, [state]); // state is a dependency
-  
+  const [state, setState] = useState('state1');
+  useEventChangeHandler(
+    emitter,
+    () => {
+      console.log('Hello!');
+    },
+    [state]
+  ); // state is a dependency
+
   // The handler is rebinded to the emitter everytime the
   // handler or a dependency changes.
-  
-  return // ...
-}
+
+  return; // ...
+};
 ```

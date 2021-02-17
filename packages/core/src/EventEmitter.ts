@@ -1,5 +1,5 @@
 export interface EventEmitterOptions<EventPayload = any> {
-  logger?: (log: string, payload?: EventPayload) => void,
+  logger?: (log: string, payload?: EventPayload) => void;
 }
 
 export type EventHandler<EventPayload> = ((payload: EventPayload) => Promise<void> | void) | null | undefined;
@@ -8,8 +8,7 @@ export class EventEmitter<EventPayload> {
   private handlerCount = 0;
   private handlers: Array<EventHandler<EventPayload>> = [];
 
-  constructor(private options?: EventEmitterOptions<EventPayload>) {
-  }
+  constructor(private options?: EventEmitterOptions<EventPayload>) {}
 
   public get numberOfHandlers() {
     return this.handlers.filter(h => !!h).length;
