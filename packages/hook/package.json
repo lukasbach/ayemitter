@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git@github.com:lukasbach/typed-react-package-starter.git",
-    "directory": "packages/hook-package"
+    "url": "git@github.com:lukasbach/typedemitter.git",
+    "directory": "packages/hook"
   },
   "author": "Lukas Bach",
   "license": "MIT",

@@ -1,6 +1,6 @@
 ## typedemitter-hook
 
-React hook component for [TODO link].
+React hook component for [typedemitter](https://github.com/lukasbach/typedemitter/tree/master/packages/core).
 
 ## Usage
 

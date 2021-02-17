@@ -76,7 +76,7 @@ type EventHandler<EventPayload> = ((payload: EventPayload) => Promise<void> | vo
 
 ## React Hook
 
-Use in conjunction with [TODO link] to use as React hook.
+Use in conjunction with [typedemitter-hook](https://github.com/lukasbach/typedemitter/tree/master/packages/hook) to use as React hook.
 
 ```typescript jsx
 import { EventEmitter } from 'typedemitter';
