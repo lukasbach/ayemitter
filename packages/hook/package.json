@@ -1,6 +1,6 @@
 {
   "name": "ayemitter-hook",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
     "url": "git@github.com:lukasbach/ayemitter.git",
@@ -47,7 +47,7 @@
     "typescript": "^4.1.2"
   },
   "dependencies": {
-    "ayemitter": "^1.0.1",
+    "ayemitter": "^1.0.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
