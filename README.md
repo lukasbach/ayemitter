@@ -80,7 +80,7 @@ type EventHandler<EventPayload> = ((payload: EventPayload) => Promise<void> | vo
 
 ## React Hook
 
-Use in conjunction with ``ayemitter-hook`` to use as React hook.
+Use in conjunction with `ayemitter-hook` to use as React hook.
 
     yarn add ayemitter ayemitter-hook
 
