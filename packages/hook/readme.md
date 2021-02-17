@@ -1,14 +1,14 @@
-## typedemitter-hook
+## ayemitter-hook
 
-React hook component for [typedemitter](https://github.com/lukasbach/typedemitter/tree/master/packages/core).
+React hook component for [ayemitter](https://github.com/lukasbach/ayemitter/tree/master/packages/core).
 
 ## Usage
 
-    yarn add typedemitter typedemitter-hook
+    yarn add ayemitter ayemitter-hook
 
 ```typescript jsx
-import { EventEmitter } from 'typedemitter';
-import { useEventChangeHandler } from 'typedemitter-hook';
+import { EventEmitter } from 'ayemitter';
+import { useEventChangeHandler } from 'ayemitter-hook';
 
 const emitter = new EventEmitter<string>();
 const Component = () => {

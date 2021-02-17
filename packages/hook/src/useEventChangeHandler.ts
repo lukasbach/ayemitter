@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { EventEmitter, EventHandler } from 'typedemitter';
+import { EventEmitter, EventHandler } from 'ayemitter';
 
 export const useEventChangeHandler = <T>(
   eventEmitter: EventEmitter<T>,

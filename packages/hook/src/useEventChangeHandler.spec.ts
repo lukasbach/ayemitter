@@ -1,6 +1,6 @@
 import { useEventChangeHandler } from './useEventChangeHandler';
 import { renderHook, act } from '@testing-library/react-hooks';
-import { EventEmitter } from 'typedemitter';
+import { EventEmitter } from 'ayemitter';
 
 test('hook rebinds handler on dependency change', () => {
   const emitter = new EventEmitter<string>();

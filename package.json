@@ -1,9 +1,9 @@
 {
-  "name": "typedemitter-core",
+  "name": "ayemitter-root",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git@github.com:lukasbach/typedemitter.git"
+    "url": "git@github.com:lukasbach/ayemitter.git"
   },
   "author": "Lukas Bach",
   "license": "MIT",

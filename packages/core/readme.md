@@ -1,17 +1,17 @@
-# typedemitter
+# ayemitter
 
 A typed easy-to-use event emitter that you can just construct with a event
 type and start adding handlers.
 
 ## Usage
 
-    yarn add typedemitter
+    yarn add ayemitter
 
 Create a `EventEmitter` instance typed to whatever your
 payload type is, add handlers and emit a new event.
 
 ```typescript
-import { EventEmitter } from 'typedemitter';
+import { EventEmitter } from 'ayemitter';
 
 const emitter = new EventEmitter<string>();
 
@@ -34,7 +34,7 @@ call waits for all handlers to finish. All handlers are
 invoked at the same time.
 
 ```typescript
-import { EventEmitter } from 'typedemitter';
+import { EventEmitter } from 'ayemitter';
 
 const emitter = new EventEmitter<string>();
 
@@ -77,11 +77,11 @@ type EventHandler<EventPayload> = ((payload: EventPayload) => Promise<void> | vo
 
 ## React Hook
 
-Use in conjunction with [typedemitter-hook](https://github.com/lukasbach/typedemitter/tree/master/packages/hook) to use as React hook.
+Use in conjunction with [ayemitter-hook](https://github.com/lukasbach/ayemitter/tree/master/packages/hook) to use as React hook.
 
 ```typescript jsx
-import { EventEmitter } from 'typedemitter';
-import { useEventChangeHandler } from 'typedemitter-hook';
+import { EventEmitter } from 'ayemitter';
+import { useEventChangeHandler } from 'ayemitter-hook';
 
 const emitter = new EventEmitter<string>();
 const Component = () => {

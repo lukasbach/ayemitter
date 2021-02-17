@@ -1,20 +1,20 @@
-# typedemitter
+# ayemitter
 
-![Testing](https://github.com/lukasbach/typedemitter/workflows/Testing/badge.svg)
-![Pretty](https://github.com/lukasbach/typedemitter/workflows/Pretty/badge.svg)
+![Testing](https://github.com/lukasbach/ayemitter/workflows/Testing/badge.svg)
+![Pretty](https://github.com/lukasbach/ayemitter/workflows/Pretty/badge.svg)
 
 A typed easy-to-use event emitter that you can just construct with a event
-type and start adding handlers.
+type and start adding handlers. Aye!
 
 ## Usage
 
-    yarn add typedemitter
+    yarn add ayemitter
 
 Create a `EventEmitter` instance typed to whatever your
 payload type is, add handlers and emit a new event.
 
 ```typescript
-import { EventEmitter } from 'typedemitter';
+import { EventEmitter } from 'ayemitter';
 
 const emitter = new EventEmitter<string>();
 
@@ -37,7 +37,7 @@ call waits for all handlers to finish. All handlers are
 invoked at the same time.
 
 ```typescript
-import { EventEmitter } from 'typedemitter';
+import { EventEmitter } from 'ayemitter';
 
 const emitter = new EventEmitter<string>();
 
@@ -82,11 +82,11 @@ type EventHandler<EventPayload> = ((payload: EventPayload) => Promise<void> | vo
 
 Use in conjunction with [TODO link] to use as React hook.
 
-    yarn add typedemitter typedemitter-hook
+    yarn add ayemitter ayemitter-hook
 
 ```typescript jsx
-import { EventEmitter } from 'typedemitter';
-import { useEventChangeHandler } from 'typedemitter-hook';
+import { EventEmitter } from 'ayemitter';
+import { useEventChangeHandler } from 'ayemitter-hook';
 
 const emitter = new EventEmitter<string>();
 const Component = () => {

@@ -1,9 +1,9 @@
 {
-  "name": "typedemitter-hook",
+  "name": "ayemitter-hook",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git@github.com:lukasbach/typedemitter.git",
+    "url": "git@github.com:lukasbach/ayemitter.git",
     "directory": "packages/hook"
   },
   "author": "Lukas Bach",
@@ -32,6 +32,7 @@
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "typedemitter": "^1.0.0"
-  }
+    "ayemitter": "^1.0.0"
+  },
+  "gitHead": "c8c2fb8c2e197abd44b5a1342eec232b9e54e367"
 }
