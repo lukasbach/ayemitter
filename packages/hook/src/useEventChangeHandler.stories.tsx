@@ -1,13 +1,13 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import { useCustomHook } from '.';
+import { useEventChangeHandler } from '.';
 
 export default {
   title: 'useCustomHook',
 } as Meta;
 
 export const HookExample: React.FC = () => {
-  const [state, increase, decrease] = useCustomHook();
+  const [state, increase, decrease] = useEventChangeHandler();
 
   return (
     <div>

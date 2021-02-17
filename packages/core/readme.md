@@ -1,8 +1,5 @@
 # typedemitter
 
-![Testing](https://github.com/lukasbach/typedemitter/workflows/Testing/badge.svg)
-![Pretty](https://github.com/lukasbach/typedemitter/workflows/Pretty/badge.svg)
-
 A typed easy-to-use event emitter that you can just construct with a event
 type and start adding handlers.
 
@@ -32,7 +29,7 @@ emitter.emit("yup");
 //   Handler 2 yup
 ```
 
-If one or more handlers are asynchronous, the ``emit``
+If one or more handlers are asynchronous, the ``emit`` 
 call waits for all handlers to finish. All handlers are
 invoked at the same time.
 
@@ -81,8 +78,6 @@ type EventHandler<EventPayload> = ((payload: EventPayload) => Promise<void> | vo
 
 Use in conjunction with [TODO link] to use as React hook.
 
-    yarn add typedemitter typedemitter-hook
-
 ```typescript jsx
 import { EventEmitter } from 'typedemitter';
 import { useEventChangeHandler } from 'typedemitter-hook';
@@ -100,29 +95,3 @@ const Component = () => {
   return // ...
 }
 ```
-
-### Hook API
-
-```typescript
-const useEventChangeHandler: <T>(
-  eventEmitter: EventEmitter<T>, 
-  handler: (payload: T) => void | Promise<void>, 
-  dependencies?: any[]
-) => void;
-```
-
-
-
-## Development
-
-When developing locally, run in the root directory...
-
-- `yarn` to install dependencies
-- `yarn test` to run tests in all packages
-- `yarn build` to build distributables and typings in `packages/{package}/out`
-- `yarn storybook` to run a local storybook server
-- `yarn build-storybook` to build the storybook
-- [`npx lerna version`](https://github.com/lerna/lerna/tree/main/commands/version#readme) to interactively bump the
-  packages versions. This automatically commits the version, tags the commit and pushes to git remote.
-- [`npx lerna publish`](https://github.com/lerna/lerna/tree/main/commands/publish#readme) to publish all packages
-  to NPM that have changed since the last release. This automatically bumps the versions interactively.
