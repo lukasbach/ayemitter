@@ -6,6 +6,20 @@
     "url": "git@github.com:lukasbach/ayemitter.git",
     "directory": "packages/core"
   },
+  "keywords": [
+    "EventEmitter",
+    "events",
+    "on",
+    "off",
+    "addEventListener",
+    "listener",
+    "handler",
+    "typed",
+    "subscribe",
+    "async",
+    "promise",
+    "tested"
+  ],
   "author": "Lukas Bach",
   "license": "MIT",
   "private": false,

@@ -6,6 +6,23 @@
     "url": "git@github.com:lukasbach/ayemitter.git",
     "directory": "packages/hook"
   },
+  "keywords": [
+    "react",
+    "hook",
+    "use",
+    "EventEmitter",
+    "events",
+    "on",
+    "off",
+    "addEventListener",
+    "listener",
+    "handler",
+    "typed",
+    "subscribe",
+    "async",
+    "promise",
+    "tested"
+  ],
   "author": "Lukas Bach",
   "license": "MIT",
   "private": false,
